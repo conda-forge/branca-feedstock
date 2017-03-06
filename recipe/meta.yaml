@@ -1,36 +1,37 @@
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
-    name: branca
-    version: {{ version }}
+  name: branca
+  version: {{ version }}
 
 source:
-    fn: branca-{{ version }}.tar.gz
-    url: https://github.com/python-visualization/branca/archive/v{{ version }}.tar.gz
-    sha256: f4130a1ff9c85e5d7777b5abf8b01d22df692698a11b2eeed35fbd19a32330e2
+  fn: branca-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/b/branca/branca-{{ version }}.tar.gz
+  sha256: 327b0bae73a519f25dc2f320d8d9f1885aad2e8e5105add1496269d5391b8ea4
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - jinja2
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - jinja2
 
 test:
-    imports:
-        - branca
+  imports:
+    - branca
 
 about:
-    home: https://github.com/python-visualization/branca
-    license: MIT
-    summary: 'This library is a spinoff from Folium with the non-map-specific features.'
+  home: https://github.com/python-visualization/branca
+  license: MIT
+  license_file: LICENSE.txt
+  summary: 'This library is a spinoff from folium with the non-map-specific features.'
 
 extra:
-    recipe-maintainers:
-        - BibMartin
-        - ocefpaf
+  recipe-maintainers:
+    - BibMartin
+    - ocefpaf

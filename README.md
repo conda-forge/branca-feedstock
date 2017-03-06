@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: This library is a spinoff from Folium with the non-map-specific features.
+Summary: This library is a spinoff from folium with the non-map-specific features.
 
 
 
