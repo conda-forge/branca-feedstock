@@ -14,9 +14,7 @@ Summary: This library is a spinoff from folium with the non-map-specific feature
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/branca-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/branca-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/branca-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/branca-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/branca-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/branca-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/branca-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/branca-feedstock)
 
 Current release info
 ====================
