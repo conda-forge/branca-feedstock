@@ -5,12 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  fn: branca-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/b/branca/branca-{{ version }}.tar.gz
   sha256: 327b0bae73a519f25dc2f320d8d9f1885aad2e8e5105add1496269d5391b8ea4
 
 build:
-  number: 0
+  number: 1
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
