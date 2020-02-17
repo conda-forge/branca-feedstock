@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: branca
@@ -6,19 +6,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/b/branca/branca-{{ version }}.tar.gz
-  sha256: 3e762c9bdf40725f3d05ea1fda8fae9b470bfada6474e43a1242c8204a7bb15e
+  sha256: c1f8231b05e000d8e3e82ec0f2d0d3cde624ca3a42d41e89a3995d9dfa357b1e
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - setuptools
     - jinja2
     - six
