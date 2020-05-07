@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: branca
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/b/branca/branca-{{ version }}.tar.gz
-  sha256: c1f8231b05e000d8e3e82ec0f2d0d3cde624ca3a42d41e89a3995d9dfa357b1e
+  sha256: 8a9df7811a4d845ffaddad1030075cf26157c91d0be10b4f800ef1c8b3caedb8
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
@@ -24,6 +24,10 @@ requirements:
     - six
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - branca
 
@@ -31,7 +35,7 @@ about:
   home: https://github.com/python-visualization/branca
   license: MIT
   license_file: LICENSE.txt
-  summary: 'This library is a spinoff from folium with the non-map-specific features'
+  summary: This library is a spinoff from folium with the non-map-specific features
 
 extra:
   recipe-maintainers:
