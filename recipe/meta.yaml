@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.5.0" %}
 
 package:
   name: branca
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/b/branca/branca-{{ version }}.tar.gz
-  sha256: c111453617b17ab2bda60a4cd71787d6f2b59c85cdf71ab160a737606ac66c31
+  sha256: e6f2f7eba7dd368ceef8f63822b867f5e11d4d3abdd099a787db9ed2b7065ae1
 
 build:
   number: 0
