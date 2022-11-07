@@ -1,27 +1,28 @@
-{% set version = "0.5.0" %}
+{% set name = "branca" %}
+{% set version = "0.6.0" %}
 
 package:
-  name: branca
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/b/branca/branca-{{ version }}.tar.gz
-  sha256: e6f2f7eba7dd368ceef8f63822b867f5e11d4d3abdd099a787db9ed2b7065ae1
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/branca-{{ version }}.tar.gz
+  sha256: 55949855214504c7583b71b9a03a84dce2e96a84027613bb53b42d04844ce24e
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3
+    - python >=3.7
+    - setuptools-scm
     - pip
   run:
-    - python >=3
+    - python >=3.7
     - setuptools
     - jinja2
-    - six
 
 test:
   requires:
