@@ -1,11 +1,11 @@
-About branca
-============
+About branca-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/branca-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/python-visualization/branca
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/branca-feedstock/blob/main/LICENSE.txt)
 
 Summary: This library is a spinoff from folium with the non-map-specific features
 
