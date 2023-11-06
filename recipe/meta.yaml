@@ -1,5 +1,5 @@
 {% set name = "branca" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/branca-{{ version }}.tar.gz
-  sha256: 55949855214504c7583b71b9a03a84dce2e96a84027613bb53b42d04844ce24e
+  sha256: 503ccb589a9ee9464cb7b5b17e5ffd8d5082c5c28624197f58f20d4d377a68bb
 
 build:
   noarch: python
